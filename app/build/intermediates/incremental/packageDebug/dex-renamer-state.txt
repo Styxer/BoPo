@@ -1,0 +1,7 @@
+#Thu Nov 10 09:19:18 IST 2016
+base.0=C\:\\Users\\ofir\\Documents\\MEGA\\Final_Project\\TestFunctionality2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ca3ec480ed433410553c4f02f75b0839cec9d352
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\ofir\\Documents\\MEGA\\Final_Project\\TestFunctionality2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_c4c086546cb8220ed587d3f556b8a76e493915a4\\classes.dex
+base.1=C\:\\Users\\ofir\\Documents\\MEGA\\Final_Project\\TestFunctionality2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_c4c086546cb8220ed587d3f556b8a76e493915a4
+file.0=C\:\\Users\\ofir\\Documents\\MEGA\\Final_Project\\TestFunctionality2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ca3ec480ed433410553c4f02f75b0839cec9d352\\classes.dex

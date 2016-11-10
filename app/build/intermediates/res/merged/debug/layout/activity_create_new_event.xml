@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ofir.testfunctionality2.CreateNewEventActivity"
+    android:background="#306a9f">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linesperator"></LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linesperator"
+        android:orientation="vertical"
+        android:id="@+id/main"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="category"
+                android:id="@+id/tvChooseCategory"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textIsSelectable="false" />
+
+            <Spinner android:id="@+id/spinner"
+                android:layout_column="0"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:spinnerMode="dropdown"
+                android:layout_height="61dp" />
+        </TableRow>
+
+        <EditText
+            android:id="@+id/etEventTitle"
+            android:layout_column="0"
+            android:hint="Tile"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_width="280dp" />
+
+        <EditText android:id="@+id/etEventDescription"
+            android:layout_column="0"
+            android:textColor="#ffffff"
+            android:singleLine="false"
+            android:hint="description"
+            android:textColorHint="#ffffff"
+            android:layout_width="280dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Location"
+                android:id="@+id/bSelectLocation"
+                android:layout_above="@+id/bSelectDate"
+                android:layout_alignParentEnd="true"
+                android:onClick="buttonOnClick"
+                android:layout_column="0" />
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLocationChosen"
+            android:layout_column="1"
+            android:textColorHint="#ffffff"
+            android:hint="Location"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:text="ACK"
+                android:id="@+id/tbACK"
+                android:checked="false"
+                android:textOff="ACK OFF"
+                android:textOn="ACK ON"
+                android:layout_alignTop="@+id/tvTimeDisplay"
+                android:layout_alignStart="@+id/bSelectLocation"
+                android:layout_column="0" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select date"
+                android:id="@+id/bSelectDate"
+                android:onClick="buttonOnClick"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/bSelectTime"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvDateDisplay"
+                android:layout_alignTop="@+id/bSelectDate"
+                android:layout_alignBottom="@+id/bSelectDate"
+                android:layout_alignParentEnd="false"
+                android:layout_column="1"
+                android:hint="DD/MM/YYYY"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="280dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select time"
+                android:id="@+id/bSelectTime"
+                android:onClick="buttonOnClick"
+                android:layout_above="@+id/bSelectDate"
+                android:layout_alignParentStart="true"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvTimeDisplay"
+                android:layout_alignBottom="@+id/bSelectTime"
+                android:layout_toEndOf="@+id/bSelectTime"
+                android:layout_column="1"
+                android:textColorHint="#ffffff"
+                android:hint="MM:HH"
+                android:textColor="#ffffff"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText android:id="@+id/etNumOfMaxparticipants"
+                android:layout_column="0"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:hint="maximum particpants"
+                android:textColorHint="#ffffff" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="save"
+                android:id="@+id/bSaveNewEvent"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/bSelectLocation"
+                android:nestedScrollingEnabled="false"
+                android:onClick="buttonOnClick"
+                android:layout_gravity="bottom"
+                android:layout_column="0" />
+
+            <Button
+                android:text="cancel"
+                android:id="@+id/bCancelEvent"
+                android:nestedScrollingEnabled="false"
+                android:onClick="buttonOnClick"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@+id/tvTimeDisplay"
+                android:layout_column="1" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

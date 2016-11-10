@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ofir.testfunctionality2.EventActivity"
+    android:background="#306a9f">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/linearLayout20"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:id="@+id/textView36"
+        android:textColor="#c7a2a2"
+        android:textSize="15dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Study"
+        android:id="@+id/tvEventCategory"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView36"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/linearLayout21"
+        android:layout_below="@+id/tvEventCategory"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:id="@+id/textView38"
+        android:textColor="#c7a2a2"
+        android:textSize="15dp"
+        android:layout_below="@+id/tvEventCategory"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Study group for the final exams"
+        android:id="@+id/tvEventDescription"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView38"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date                  and          time"
+        android:id="@+id/textView40"
+        android:textColor="#c7a2a2"
+        android:textSize="15dp"
+        android:layout_below="@+id/tvEventDescription"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/linearLayout22"
+        android:layout_alignTop="@+id/textView40"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28/06/16 "
+        android:id="@+id/tvEventDate"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView40"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACK STATUS"
+        android:id="@+id/textView42"
+        android:textColor="#c7a2a2"
+        android:textSize="15dp"
+        android:layout_below="@+id/tvEventDate"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/linearLayout23"
+        android:layout_above="@+id/textView42"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView12"
+        android:src="@drawable/capture"
+        android:layout_below="@+id/tvEventLocation"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACK OFF"
+        android:id="@+id/tvACKStatus"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView42"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/linearLayout24"
+        android:layout_below="@+id/tvACKStatus"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="maximum members           members joined"
+        android:id="@+id/textView44"
+        android:textColor="#c7a2a2"
+        android:textSize="15dp"
+        android:layout_below="@+id/tvACKStatus"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/tvEventMaxParticipants"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView44"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/textView46"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView44"
+        android:layout_toEndOf="@+id/tvEventTime" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/linearLayout25"
+        android:layout_alignBottom="@+id/tvEventMaxParticipants"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Members (persons)"
+        android:id="@+id/button"
+        android:layout_below="@+id/linearLayout25"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/linearLayout25" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/linearLayout26"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:id="@+id/textView47"
+        android:textColor="#c7a2a2"
+        android:textSize="15dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9:00"
+        android:id="@+id/tvEventTime"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/linearLayout23"
+        android:layout_alignEnd="@+id/textView40" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEventLocation"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView47"
+        android:layout_toEndOf="@+id/tvEventMaxParticipants"
+        android:hint="Location"
+        android:textColorHint="#ffffff" />
+
+</RelativeLayout>
