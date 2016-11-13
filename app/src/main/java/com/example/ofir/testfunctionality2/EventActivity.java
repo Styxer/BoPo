@@ -16,7 +16,7 @@ public class EventActivity extends AppCompatActivity {
     TextView getACKStatus;
     TextView getDateAndTime;
     TextView getMaxNumOfParticipants;
-//////alona123
+//////alona12345
 
     public static final String MY_PREFS_NAME = "MyPrefsFile";
 
